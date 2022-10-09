@@ -24,15 +24,12 @@ Route::get('/room', function () {
     return view('room');
 });
 Route::get('/facilities', function () {
-    echo "facilities";
     return view('facilities');
 });
 Route::get('/contact us', function () {
-    echo "contact";
     return view('contact');
 });
 Route::get('/about', function () {
-    echo "about";
     return view('about');
 });
 
