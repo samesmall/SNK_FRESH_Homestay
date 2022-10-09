@@ -13,9 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/room', function () {
+    return view('room');
+});
+Route::get('/facilities', function () {
+    echo "facilities";
+    return view('facilities');
+});
+Route::get('/contact us', function () {
+    echo "contact";
+    return view('contact');
+});
+Route::get('/about', function () {
+    echo "about";
+    return view('about');
+});
+
 
 Route::middleware([
     'auth:sanctum',
